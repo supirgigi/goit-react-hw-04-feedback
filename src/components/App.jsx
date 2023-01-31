@@ -12,9 +12,9 @@ const App = () => {
   });
 
   const onLeaveFeedback = option => {
-    setFeedback(prevState => {
-      const value = prevState[option];
-      return { ...prevState, [option]: value + 1 };
+    setFeedback(prevFeedback => {
+      const value = prevFeedback[option];
+      return { ...prevFeedback, [option]: value + 1 };
     });
   };
 
